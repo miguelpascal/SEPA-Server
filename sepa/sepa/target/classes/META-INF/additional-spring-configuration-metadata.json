@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "sct.thresholdAmount",
+      "type": "java.lang.String",
+      "description": "Description for threshold amount use for the sepa credit transfer."
+    },
+    {
+      "name": "sct.currency",
+      "type": "java.lang.String",
+      "description": "Description out the currency of all sepa credit transaction."
+    }
+  ] }

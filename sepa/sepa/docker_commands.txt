@@ -1,0 +1,40 @@
+mvn compile:
+This command is used to compile the project’s source code.
+
+mvn clean:
+Here, the project is cleaned to remove all previous-build files generated.
+
+mvn test:
+With this command, one can run project testing steps.
+
+mvn test-compile:
+This command is used to compile the code from the test source.
+
+mvn install:
+This command helps deploys the packaged WAR/JAR files storing them as classes in the local repository.
+
+mvn package:
+With this Maven lifecycle command, one packages or creates a project WAR or JAR file to be able to use a distributable format.
+
+mvn deploy:
+The deploy command occurs after compilation, running project tests, and project building. Here the packaged WAR/JAR files are copied to the remote repository for use by other developers.
+
+
+Build a docker image:
+
+Launch Docker in your computer, Make sure to move in the directory where the docker file is located and run:
+
+docker build -t docker_image_name .
+
+After building the docker image, run it with the following command:
+
+
+docker run --rm docker_image_name 
+
+ou 
+
+docker run -d -p 8080:3000 docker_image_name
+
+to push docker in the docker hub
+
+https://docs.docker.com/get-started/04_sharing_app/
