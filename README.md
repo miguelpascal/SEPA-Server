@@ -66,10 +66,10 @@ public class SepaApplication {
 
         return args -> {
             if (customerRepository.findByEmail("miguel@gmail.com")==null && customerRepository.findByEmail("pamela@gmail.com")==null && customerRepository.findByEmail("emmanuel@gmail.com")==null && customerRepository.findByEmail("bertin@gmail.com")==null) {
-                customerRepository.save(new Customer(null, "miguel@gmail.com", "1234", "Kamdem", "Pascal Miguel", "+33681456064", new Date()));
-                customerRepository.save(new Customer(null, "pamela@gmail.com", "1234", "Monthe", "Juimo Pamela", "+33674978013", new Date()));
-                customerRepository.save(new Customer(null, "bertin@gmail.com", "1234", "LOUBAM", "Bertin Beriot", "+33628821049", new Date()));
-                customerRepository.save(new Customer(null, "emmanuel@gmail.com", "1234", "ATANGANA ATANGANA", "Jean Emmanuel", "+33612489039", new Date()));
+                customerRepository.save(new Customer(null, "miguel@gmail.com", "1234", "Kamdem", "Pascal Miguel", "+3368145604", new Date()));
+                customerRepository.save(new Customer(null, "pamela@gmail.com", "1234", "Monthe", "Juimo Pamela", "+3367497803", new Date()));
+                customerRepository.save(new Customer(null, "bertin@gmail.com", "1234", "LOUBAM", "Bertin Beriot", "+3362882049", new Date()));
+                customerRepository.save(new Customer(null, "emmanuel@gmail.com", "1234", "ATANGANA ATANGANA", "Jean Emmanuel", "+3312489039", new Date()));
                 Customer pamela = customerRepository.findByEmail("pamela@gmail.com");
                 Customer miguel = customerRepository.findByEmail("miguel@gmail.com");
                 Customer bertin = customerRepository.findByEmail("bertin@gmail.com");
